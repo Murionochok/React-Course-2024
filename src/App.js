@@ -10,10 +10,10 @@ export default function App() {
   const [open, setOpen] = useState(true);
 
   const handlePrev = () => {
-    if (stepNum > 1) setStepNum(stepNum - 1);
+    if (stepNum > 1) setStepNum((step) => step - 1);
   };
   const handleNext = () => {
-    if (stepNum < 3) setStepNum(stepNum + 1);
+    if (stepNum < 3) setStepNum((step) => step + 1);
   };
   const handleToggle = () => {
     setOpen(!open);
